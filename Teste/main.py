@@ -16,19 +16,22 @@ def is_connected():
 #Está função tem a responsabilidade de pegar os cambios
 def getCurrency():
     if(is_connected() == True):
+        
         response = requests.get('https://www.freeforexapi.com/api/live?pairs=USDAOA,USDEUR,EURUSD') #Estou usando essa API grátis
         data = response.json()
-
         with open('data.json', 'w') as outfile:
             json.dump(data, outfile)
-        
         exchange = [data["rates"]["USDAOA"]["rate"], data["rates"]["USDEUR"]["rate"]]
         return exchange
+    
     elif(is_connected() == False):
-        with open('data.json') as json_file:
-            data = json.load(json_file)
-            exchange = [data["rates"]["USDAOA"]["rate"], data["rates"]["USDEUR"]["rate"]]
-            return exchange
+        if os.path.exists("data.json") == True:
+            with open('data.json') as json_file:
+                data = json.load(json_file)
+                exchange = [data["rates"]["USDAOA"]["rate"], data["rates"]["USDEUR"]["rate"]]
+                return exchange
+        else:
+            sys.exit("Connecte a internet para baixar os dados!!!")
 
 dados = getCurrency()
             
