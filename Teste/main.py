@@ -1,8 +1,8 @@
-import math # modulo para operações matemáticas
 import os # Modulo referênte aos comandos do sistema
 import requests # Modulo para solicitações HTTP
 import json # Modulo responsável a manipulação de json
 import socket # Modulo responsável por conexões
+import sys #
 
 #Função que verfica se tem internet ou não
 def is_connected():
@@ -93,45 +93,45 @@ def info(x):
         "\nDigte sua escolha de acordo com a tabela a cima ou 3 para sair do programa: ")
 
 
-os.system("color FA")
+os.system("color 1F")
 
 while True:
     os.system("cls")
     print("Quer Converter?\n\"S\" ou \"N\"?")
-    op = str(input("\t==>"))
+    op = str(input("\t==> "))
     if op.lower() == "n":
         break
     elif op.lower() == "s":
         os.system("cls")
         info(1)
-        escolha = int(input("\t==>"))
+        escolha = int(input("\t==> "))
         os.system("cls")
         if escolha == 1:
             info(2)
-            escolha = int(input("\t==>"))
+            escolha = int(input("\t==> "))
             os.system("cls")
             if escolha == 1:
                 print("\n - - - || DOLAR PARA KWANZA || - - -\n""\nDigite um valor em dolar = ")
-                valor = float(input("\t==>"))
+                valor = float(input("\t==> "))
                 print("\nIsso equivale a = {0} kz(AOA)\n".format(round(convertUSD_AOA(valor, dados[0]),2)))
             elif escolha == 2:
                 print("\n - - - || KWANZA PARA DOLAR || - - -\n""\nDigite um valor em kwanza = ")
-                valor = float(input("\t==>"))
+                valor = float(input("\t==> "))
                 print("\nIsso equivale a = {0} dolares(USD)\n".format(round(convertAOA_USD(valor, dados[0]),2)))
             elif escolha == 3:
                 break
             os.system("pause")	
         elif escolha == 2:
             info(3)
-            escolha = int(input("\t==>"))
+            escolha = int(input("\t==> "))
             os.system("cls")
             if escolha == 1:
                 print("\n - - - || EURO PARA KWANZA || - - -\n""\nDigite um valor em euro = ")
-                valor = float(input("\t==>"))
+                valor = float(input("\t==> "))
                 print("\nIsso equivale a = {0} kz(AOA)\n".format(round(convertEUR_AOA(90.05,dados[1],dados[0]),2)))
             elif escolha == 2:
                     print("\n - - - || KWANZA PARA EUROS || - - -\n""\nDigite um valor em Kwanza = ")
-                    valor = float(input("\t==>"))
+                    valor = float(input("\t==> "))
                     print("\nIsso equivale a = {0} euros(EUR)\n".format(round(convertAOA_EUR(valor,dados[1],dados[0]),2)))
             elif escolha == 3:
                 break
