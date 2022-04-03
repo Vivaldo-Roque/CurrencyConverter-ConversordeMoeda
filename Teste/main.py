@@ -128,7 +128,7 @@ while True:
             if escolha == 1:
                 print("\n - - - || EURO PARA KWANZA || - - -\n""\nDigite um valor em euro = ")
                 valor = float(input("\t==> "))
-                print("\nIsso equivale a = {0} kz(AOA)\n".format(round(convertEUR_AOA(90.05,dados[1],dados[0]),2)))
+                print("\nIsso equivale a = {0} kz(AOA)\n".format(round(convertEUR_AOA(valor,dados[1],dados[0]),2)))
             elif escolha == 2:
                     print("\n - - - || KWANZA PARA EUROS || - - -\n""\nDigite um valor em Kwanza = ")
                     valor = float(input("\t==> "))
