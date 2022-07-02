@@ -1,11 +1,24 @@
-# python
+<h1 align="center">
+  <br>
+  <img src="https://github.com/Vivaldo-Roque/Python-CurrencyExchange-ConversordeMoeda/blob/master/images/logo.jpg" alt="Currency converter" width="250">
+  Currency converter
+  <br>
+</h1>
 
-Conversor de moeda USD EUR para AOA e vice versa.
+[README em Português](README_PT.md)
 
-Usando API https://www.freeforexapi.com/Home/Api
+video
 
-English:
+## Description
+Short version: this currency converter only has 2 languages (English and Portuguese).
 
-Currency converter USD EUR to AOA and vice versa.
+Extended version: the python script will read the system language and connect to the internet and download data for the selected coins.
 
-Using API https://www.freeforexapi.com/Home/Api
+> Multi-language: EN and PT
+
+## Resources
+API used => https://rapidapi.com/solutionsbynotnull/api/currency-converter18/
+
+## license
+
+[MIT](LICENSE)

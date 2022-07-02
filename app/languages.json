@@ -1,0 +1,18 @@
+{
+    "en": {
+        "net_error": "Connect to internet!",
+        "info_1": "Currency converter",
+        "info_2": "From",
+        "info_3": "To",
+        "info_4": "Convert",
+        "info_5": "Clear"
+    },
+    "pt": {
+        "net_error": "Conectar à internet!",
+        "info_1": "Conversor de moedas",
+        "info_2": "De",
+        "info_3": "Para",
+        "info_4": "Converter",
+        "info_5": "Limpar"
+    }
+}
