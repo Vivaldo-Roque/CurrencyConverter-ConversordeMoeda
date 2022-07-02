@@ -1,13 +1,14 @@
 <h1 align="center">
   <br>
-  <img src="https://github.com/Vivaldo-Roque/Python-CurrencyExchange-ConversordeMoeda/blob/master/images/logo.jpg" alt="Currency converter" width="250">
+  <img src="https://github.com/Vivaldo-Roque/CurrencyConverter-ConversordeMoeda/blob/master/images/logo.jpg" alt="Currency converter" width="250">
+  <br>
   Conversor de moedas
   <br>
 </h1>
 
 [README em Inglês](README.md)
 
-video
+![demo](images/demo.gif)
 
 ## Descrição
 Versão resumida: este conversor de moedas apenas apenas tem 2 idiomas (Inglês e Português).
